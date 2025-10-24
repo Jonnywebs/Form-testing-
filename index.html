@@ -1002,7 +1002,7 @@
         });
 
         // Contact Form Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function() {
       
             
             // Get form values
@@ -1011,6 +1011,7 @@
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
+            const messageSent = document.getElementById('messageSent');
             
             // Simple validation
             if (!firstName || !lastName || !email || !subject || !message) {
@@ -1018,11 +1019,9 @@
                 return;
             }
             
-            // In a real application, you would send this data to a server
-            // For this demo, we'll just show a success message
-            alert(`Thank you, ${firstName}! Your message has been sent successfully. We'll get back to you soon.`);
             
-            this.reset();
+            alert(`Thank you, ${firstName}! Your message has been sent successfully. We'll get back to you soon.`);
+           
         });
 
         // FAQ Accordion

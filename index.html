@@ -1002,7 +1002,7 @@
         });
 
         // Contact Form Submission
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
+        document.getElementById('contact-form').addEventListener('submit', function() {
       
             
             // Get form values
@@ -1022,8 +1022,7 @@
             // For this demo, we'll just show a success message
             alert(`Thank you, ${firstName}! Your message has been sent successfully. We'll get back to you soon.`);
             
-            // Reset the form
-            this.reset();
+            
         });
 
         // FAQ Accordion
